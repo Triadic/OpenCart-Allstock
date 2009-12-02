@@ -42,14 +42,14 @@ access.
 You can also use this module in older versions of OpenCart but you have to change
 the file admin/controler/report/allstock.php adding these lines:
 
- $this->id       = 'content';
- $this->template = 'report/allstock.tpl';
- $this->layout   = 'common/layout';
- $this->render();
+> $this->id       = 'content';
+> $this->template = 'report/allstock.tpl';
+> $this->layout   = 'common/layout';
+> $this->render();
 
 And commenting this line: (the last one):
 
- #$this->response->setOutput($this->render(TRUE), $this->config->get('config_compression'));
+> #$this->response->setOutput($this->render(TRUE), $this->config->get('config_compression'));
 
 PORTUGUÊS
 =========
@@ -83,11 +83,11 @@ Você pode usar este módulo com versões mais antigas do OpenCart, mas para iss
 você terá que alterar o arquivo admin/controler/report/allstock.php adicionando
 as seguintes linhas:
 
- $this->id       = 'content';
- $this->template = 'report/allstock.tpl';
- $this->layout   = 'common/layout';
- $this->render();
+> $this->id       = 'content';
+> $this->template = 'report/allstock.tpl';
+> $this->layout   = 'common/layout';
+> $this->render();
 
 E comentando esta linha: (a última):
 
- #$this->response->setOutput($this->render(TRUE), $this->config->get('config_compression'));
+> #$this->response->setOutput($this->render(TRUE), $this->config->get('config_compression'));
