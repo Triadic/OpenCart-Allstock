@@ -21,9 +21,9 @@ class ControllerReportAllstock extends Controller {
 
 		$this->load->model('catalog/product');
 
-		$product_total = $this->model_catalog_product->getTotalProducts();
+		$this->data['product_total'] = $this->model_catalog_product->getTotalProducts();
 
-		$products = $this->model_catalog_product->getProduct();
+		$this->data['products']= $this->model_catalog_product->getProducts();
 
  		$this->data['heading_title'] = $this->language->get('heading_title');
 
@@ -31,6 +31,7 @@ class ControllerReportAllstock extends Controller {
 
 		$this->data['column_name'] = $this->language->get('column_name');
 		$this->data['column_model'] = $this->language->get('column_model');
+		$this->data['column_price'] = $this->language->get('column_price');
 		$this->data['column_stock'] = $this->language->get('column_stock');
 		$this->data['column_edit'] = $this->language->get('column_edit');
 
