@@ -12,7 +12,7 @@ installation on order to run this module:
 
 File: admin/view/template/common/menu.tpl
 In section "reports" add the following line:
-<li><a href="index.php?route=report/allstock">All items in stock</a></li>
+&lt;li&gt;&lt;a href="index.php?route=report/allstock"&gt;All items in stock&lt;/a&gt;&lt;/li&gt;
 
 Remember to change the path if it doesn't fit your install and also the template
 file if it isn't the default.
@@ -38,7 +38,7 @@ algumas modificações no código do seu OpenCart para que este módulo funcione
 
 Arquivo: admin/view/template/common/menu.tpl
 Na seção "reports" adicione a seguinte linha:
-<li><a href="index.php?route=report/allstock">Todos os ítens no estoque</a></li>
+&lt;li&gt;&lt;a href="index.php?route=report/allstock"&gt;Todos os ítens no estoque&lt;/a&gt;&lt;/li&gt;
 
 Lembre-se de mudar o caminho dos arquivos se ele não for igual ao da sua
 instalação e também se o arquivo do template não for igual.
