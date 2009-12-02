@@ -43,13 +43,16 @@ You can also use this module in older versions of OpenCart but you have to chang
 the file admin/controler/report/allstock.php adding these lines:
 
 > $this->id       = 'content';
+>
 > $this->template = 'report/allstock.tpl';
+>
 > $this->layout   = 'common/layout';
+>
 > $this->render();
 
 And commenting this line: (the last one):
 
-> #$this->response->setOutput($this->render(TRUE), $this->config->get('config_compression'));
+> $this->response->setOutput($this->render(TRUE), $this->config->get('config_compression'));
 
 PORTUGUÊS
 =========
@@ -84,10 +87,13 @@ você terá que alterar o arquivo admin/controler/report/allstock.php adicionand
 as seguintes linhas:
 
 > $this->id       = 'content';
+>
 > $this->template = 'report/allstock.tpl';
+>
 > $this->layout   = 'common/layout';
+>
 > $this->render();
 
 E comentando esta linha: (a última):
 
-> #$this->response->setOutput($this->render(TRUE), $this->config->get('config_compression'));
+> $this->response->setOutput($this->render(TRUE), $this->config->get('config_compression'));
