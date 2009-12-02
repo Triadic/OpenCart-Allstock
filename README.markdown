@@ -17,7 +17,7 @@ ENGLISH
 
 ABOUT
 -----
-A module to report the products in stock
+A module to report the products in stock in OpenCart 1.3.4.
 
 INSTALL
 -------
@@ -39,13 +39,25 @@ To access the report page you'll need to grant access to 'report/allstock' to
 the "Top Administrator" user group or other one that you use to grant admin
 access.
 
+You can also use this module in older versions of OpenCart but you have to change
+the file admin/controler/report/allstock.php adding these lines:
+
+ $this->id       = 'content';
+ $this->template = 'report/allstock.tpl';
+ $this->layout   = 'common/layout';
+ $this->render();
+
+And commenting this line: (the last one):
+
+ #$this->response->setOutput($this->render(TRUE), $this->config->get('config_compression'));
+
 PORTUGUÊS
 =========
 
 SOBRE
 -----
 
-Este é um modulo para relatório de todos os itens no estoque do OpenCart
+Este é um modulo para relatório de todos os itens no estoque do OpenCart 1.3.4.
 
 INSTALAÇÃO
 ----------
@@ -66,3 +78,16 @@ ATENÇÃO
 Para acessar a página de relatório você precisará dar acessso à página
 'report/allstock' para o grupo "Top Administrator" ou outro grupo que você usa
 para dar acesso administrativo.
+
+Você pode usar este módulo com versões mais antigas do OpenCart, mas para isso
+você terá que alterar o arquivo admin/controler/report/allstock.php adicionando
+as seguintes linhas:
+
+ $this->id       = 'content';
+ $this->template = 'report/allstock.tpl';
+ $this->layout   = 'common/layout';
+ $this->render();
+
+E comentando esta linha: (a última):
+
+ #$this->response->setOutput($this->render(TRUE), $this->config->get('config_compression'));
