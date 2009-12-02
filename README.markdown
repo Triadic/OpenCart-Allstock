@@ -50,8 +50,10 @@ the file admin/controler/report/allstock.php adding these lines:
 >
 > $this->render();
 
-And commenting this line: (the last one):
+And commenting these lines: (the first and the last ones):
 
+> &lt;?php echo $header; ?&gt;
+>
 > $this->response->setOutput($this->render(TRUE), $this->config->get('config_compression'));
 
 PORTUGUÊS
@@ -94,6 +96,8 @@ as seguintes linhas:
 >
 > $this->render();
 
-E comentando esta linha: (a última):
+E comentando estas linhas: (a primeira e a última):
 
+> &lt;?php echo $header; ?&gt;
+>
 > $this->response->setOutput($this->render(TRUE), $this->config->get('config_compression'));
